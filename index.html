@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap style -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Mac Book Pro</title>
+    
+</head>
+<body>
+    <main>
+        <section class="container">
+            <div class="row">
+
+                <!-- image colum  -->
+                <div class="col-md-6">
+                    <img class="w-100" src="images/mac.png" alt="">
+                </div>
+
+                <!-- text content colum  -->
+                <div class="col-md-6">
+                    <h1>Customize your Blue 24-inch iMac with Apple M1 chip</h1>
+                    <p>Apple M1 chip with 8-core CPU with performence cores and 4 efficiency cores, 7-core GPU, and 16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt/USB 4 ports Magic Mouse Keyboard-US English</p>
+
+                    <div class="mt-5">
+                        <h3>Memory</h3>
+                        <button id="8gb-memory" class="btn btn-outline-dark">8GB unified memory</button>
+                        <button id="16gb-memory" class="btn btn-outline-dark">16GB unified memory</button>
+                    </div>
+                    <div class="mt-5">
+                        <h3>Storage</h3>
+                        <button id="256gb-storage" class="btn btn-outline-dark">256GB SSD Storage</button>
+                        <button id="512gb-storage" class="btn btn-outline-dark">512GB SSD Storage</button>
+                        <button id="1tb-storage" class="btn btn-outline-dark">1TB SSD Storage</button>
+                    </div>
+                    <div class="mt-5">
+                        <h3>Choose your delivery option</h3>
+                        <button id="free-delivery" class="btn btn-outline-dark">Friday, Aug 25 FREE prime delivery</button>
+                        <button id="charge-delivery" class="btn btn-outline-dark">Friday, Aug 21 delivery charge $20</button>
+                    </div>
+
+                    <!-- pricing part  -->
+                    <div class="mt-5">
+                        <div class="row w-75">
+                            <div class="col-md-6">
+                                <h5>Best Price</h5> <hr>
+                                <h5>Extra Memory Cost</h5><hr>
+                                <h5>Extra Storage Cost</h5><hr>
+                                <h5>Delivery Charge</h5><hr class="p-1 rounded-3">
+                                <h5>Total Price</h5>
+                            </div>
+                            <div class="col-md-6">
+                                <h5>$<span id="best-price">1299</span></h5><hr>
+                                <h5>$<span id="memory-cost">0</span></h5><hr>
+                                <h5>$<span id="storage-cost">0</span></h5><hr>
+                                <h5>$<span id="delivery-charge">0</span></h5><hr class="p-1 rounded-3">
+                                <h5>$<span id="total-price">1299</span></h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- promo code part  -->
+                    <div class="mt-4">
+                        <h4>Add Promo Code</h4>
+                        <div class="d-flex">
+                        	<input id="promo-input" type="text" class="form-control w-50 me-1" placeholder="promo code">
+                        <button id="promo-code" class="btn btn-danger">Apply</button>
+                        	
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container text-center my-3">
+            <hr>
+            <h1 class="text-success">Total: $<span id="total-cost">1299</span></h1>
+        </div>
+    </footer>
+    <!-- javascript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
